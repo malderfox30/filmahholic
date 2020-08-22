@@ -1,0 +1,55 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+  background-color: #031321;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 18px;
+  }
+
+  .SearchBar-fields input{
+    width: 2.4em;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Reusable Component - Image Container */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #000;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* App Styles */
+
+.App {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  padding: 0.4em;
+  margin: 0px;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #2196f3;
+  text-shadow: 0 0 1px #de0964, 0 0 70px #2196f3;
+  background-color: #020d16;
+}
+
+.Highlight{
+  color: #de0964;
+}

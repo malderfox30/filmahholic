@@ -1,0 +1,113 @@
+.Film{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin: 2rem;
+    color: white;
+    align-items: center;
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+  .Film-header{
+    width: 300px;
+    height: 450px;
+    float: left;
+    display: flex;
+  }
+  p{
+    line-height: 1.25;
+  }
+  .front{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    width: 300px;
+    height: 450px;
+    background: url('./no_preview.png');
+    background-size: cover;
+    color: white;
+    transform:  rotateX(0) rotateY(0deg) translateZ(225px);
+    transition: transform .2s linear 0s;
+    /*box-shadow:  0px 30px 40px 1px #888;*/
+  }
+  .side{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 240px;
+    height: 421px;
+    padding: 15px 40px;
+    overflow-y: auto;
+    background: linear-gradient(rgba(3,19,33,0.3), rgba(2,19,39,0.3)), url('../App/wallpaper2you_5422.jpg');
+    color: white;
+    transform:  rotateX(0deg) rotateY(90deg) translateZ(150px); 
+    transition: transform .2s linear 0s;
+  }
+
+  .side::-webkit-scrollbar {
+    display: none;
+  }
+  .side p {
+    text-align: justify;
+    font-weight: 400;
+  }
+  .Film-header:hover > .front {
+    transform: perspective(3000px) rotateX(0deg) rotateY(-75deg) translateZ(190px);
+    opacity: 0.3;
+    box-shadow: none;
+  }
+  .Film-header:hover > .side {
+    transform: perspective(700px) rotateX(0deg) rotateY(15deg) translateZ(0px);
+    /*box-shadow:  0px 30px 40px 1px #888;*/
+  }
+
+  .Film-information{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Film-information p{
+    margin: 10px 0px;
+    font-size: .92em;
+    font-weight: 400;
+  }
+
+  .Film-information .Rating{
+      display: block;
+      margin: 0px;
+      float: right;
+  }
+  .Circle{
+      display: block;
+      line-height: 2.3em;
+      text-align: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #2196f3;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: #852f54;
+      text-shadow: 0px 0px 1px rgb(243, 157, 157);
+  }
+  .Film-trailer{
+    float: left;
+    width: 70%;
+    margin-top: 0.3em;
+    padding: 13px;
+  }
+
+  .Film-trailer #text{
+    text-align: center;
+  }
+  .Rating{
+    color: #2196f3;
+  }

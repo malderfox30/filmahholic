@@ -1,0 +1,118 @@
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    background: linear-gradient(rgba(3,19,33,0.65), rgba(2,19,39,0.65)), url('../App/wallpaper2you_5422.jpg');
+    background-position: center;
+  }
+  .SearchBar-fields {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.38rem;
+  }
+  
+  .SearchBar-fields input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 27rem;
+    padding: .66rem 1rem;
+    margin-right: 2.22rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #2196f3;
+    background-color: rgba(3,19,33,0);
+    border: 1px solid #2196f3
+  }
+  
+  .SearchBar-fields input:last-child {
+    margin-right: 0;
+  }
+  
+  .SearchBar-submit {
+    text-align: center;
+  }
+
+  button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgba(3,19,33,0);
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover{
+    color: #0e375a;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.2s;
+  }
+  
+  button span{
+    display: block;
+    position: absolute;
+  }
+  
+  button span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+  }
+  button:hover span:nth-child(1){
+    left: 100%;
+    transition: 0.2s;
+  }
+  
+  button span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+  }
+  button:hover span:nth-child(3){
+    right: 100%;
+    transition: 0.2s;
+    transition-delay: 0.1s;
+  }
+  
+  button span:nth-child(2){
+    right: 0;
+    top: -100%;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, #2196f3);
+  }
+  button:hover span:nth-child(2){
+    top: 100%;
+    transition: 0.2s;
+    transition-delay: 0.05s;
+  }
+  
+  button span:nth-child(4){
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(360deg, transparent, #2196f3);
+  }
+  button:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 0.2s;
+    transition-delay: 0.15s;
+  }
